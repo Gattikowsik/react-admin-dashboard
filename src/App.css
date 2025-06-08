@@ -4,3 +4,39 @@
 .mainContentWrapper{
     flex: 4;
 }
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  background-color: var(--sidebar-bg);
+  color: var(--sidebar-text);
+}
+
+.calendar {
+  background-color: var(--calendar-bg);
+  color: var(--text-color);
+}
+
+.kanban-board {
+  background-color: var(--kanban-bg);
+  color: var(--text-color);
+}
+
+.user-page {
+  background-color: var(--userpage-bg);
+  color: var(--text-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}

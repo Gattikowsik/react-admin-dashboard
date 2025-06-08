@@ -1,0 +1,106 @@
+:root {
+  --bg-color: #f5f5f5;
+  --topbar-bg: #ffffff;
+  --sidebar-bg: #e0e0e0;
+  --text-color: #000000;
+}
+
+/* Apply styles to classes */
+.topbar {
+  background-color: var(--topbar-bg);
+  color: var(--text-color);
+}
+
+.sidebar {
+  background-color: var(--sidebar-bg);
+  color: var(--text-color);
+}
+
+.app-background {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+}
+
+/* Container */
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+/* Topbar */
+.topbar {
+  background-color: #fff;
+  color: #222;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+  padding: 0 20px;
+}
+
+.topbarWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #eaeaea;
+  color: #222;
+  overflow-y: auto;
+}
+
+.sidebarWrapper {
+  padding: 20px;
+}
+
+.sidebarTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.sidebarList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebarListItem {
+  margin-bottom: 10px;
+}
+
+.sidebarListLink {
+  color: #222;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.sidebarListLink:hover {
+  background-color: #ddd;
+}
+
+/* Main Content */
+.mainContentWrapper {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+  overflow-y: auto;
+}

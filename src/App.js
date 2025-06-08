@@ -12,6 +12,7 @@ import ProductList from './pages/ProductList/ProductList';
 import NewProduct from './pages/NewProduct/NewProduct';
 import Calendar from './components/FullCalendar/Calendar';
 import Kanban from './components/Kanban/Kanban';
+import { ThemeProvider } from './Context/ThemeContext';
 
 function App() {
   const router = createBrowserRouter([
@@ -31,8 +32,11 @@ function App() {
       ]
     },
   ]);
-
-  return <RouterProvider router={router} />;
+  return (
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  );
 }
 
 export default App;

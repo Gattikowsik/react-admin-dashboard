@@ -1,0 +1,62 @@
+.container {
+  padding: 10px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Base button styles */
+.button {
+  cursor: pointer;
+  padding: 8px 20px;
+  border-radius: 25px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  color: #4caf50; /* default green */
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: none;
+  user-select: none;
+}
+
+/* Hover effects for each theme */
+.button.light:hover:not(:disabled) {
+  background-color: #fbe9e7; /* light red/pink shade */
+  color: #d84315; /* darker red */
+}
+
+.button.dark:hover:not(:disabled) {
+  background-color: #cfd8dc; /* light blue-grey */
+  color: #37474f; /* dark slate */
+}
+
+.button.blue:hover:not(:disabled) {
+  background-color: #e3f2fd; /* light blue */
+  color: #1565c0; /* dark blue */
+}
+
+/* Disabled button styles per theme */
+.button.light:disabled {
+  cursor: default;
+  border-color: #e65100;
+  background-color: #ef6c00; /* orange */
+  color: white;
+  box-shadow: 0 0 10px rgba(239, 108, 0, 0.7);
+}
+
+.button.dark:disabled {
+  cursor: default;
+  border-color: #263238;
+  background-color: #37474f; /* dark slate */
+  color: white;
+  box-shadow: 0 0 10px rgba(55, 71, 79, 0.7);
+}
+
+.button.blue:disabled {
+  cursor: default;
+  border-color: #0d47a1;
+  background-color: #1565c0; /* dark blue */
+  color: white;
+  box-shadow: 0 0 10px rgba(21, 101, 192, 0.7);
+}
