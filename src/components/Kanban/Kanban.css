@@ -1,0 +1,23 @@
+.kanbanBoard {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.kanbanColumn {
+  flex: 1;
+  background-color: var(--cardBg, #f4f4f4);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.kanbanTask {
+  background-color: white;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.kanbanTask:focus-within {
+  background-color: #e0e0e0;
+}

@@ -9,8 +9,9 @@ import {
   RecyclingOutlined,
   Settings,
   Storefront,
-  Timeline,
-  TrendingUp
+  ViewKanban,
+  EventNote,
+  BarChart,
 } from "@mui/icons-material";
 import "./Sidebar.css";
 import { Link } from "react-router-dom";
@@ -30,16 +31,21 @@ export default function Sidebar() {
               </Link>
             </li>
             <li className="sidebarListItem">
-              {/* Example: If you plan to implement /analytics */}
-              <Link className="siderListLink" to="/analytics">
-                <Timeline className="listItemIcon" /> Analytics
+              <Link className="siderListLink" to="/Calendar">
+                <EventNote className="listItemIcon" /> Calendar
+              </Link>
+            </li>
+            <li className="sidebarListItem">
+              <Link className="siderListLink" to="/Kanban">
+                <ViewKanban className="listItemIcon" /> Kanban
               </Link>
             </li>
             <li className="sidebarListItem">
               <Link className="siderListLink" to="/sales">
-                <TrendingUp className="listItemIcon" /> Sales
+                <BarChart className="listItemIcon" /> Sales
               </Link>
             </li>
+
           </ul>
         </div>
 

@@ -10,7 +10,8 @@ import UserEdit from './pages/UserEdit/UserEdit';
 import NewUser from './pages/NewUser/NewUser';
 import ProductList from './pages/ProductList/ProductList';
 import NewProduct from './pages/NewProduct/NewProduct';
-
+import Calendar from './components/FullCalendar/Calendar';
+import Kanban from './components/Kanban/Kanban';
 
 function App() {
   const router = createBrowserRouter([
@@ -18,46 +19,20 @@ function App() {
       path: "/",
       element: <Layout />,
       children: [
-        {
-          path: '/',
-          element: <Home />,
-        },
-        {
-          path: '/users',
-          element: <UserList />,
-        },
-        {
-          path: '/newUser',
-          element: <NewUser />,
-        },
-        {
-          path: '/user/:userId',
-          element: <UserEdit />,
-        },
-        {
-          path: '/products',
-          element: <ProductList />,
-        },
-        {
-          path: '/newProduct',
-          element: <NewProduct />,
-        },
+        { path: '/', element: <Home /> },
+        { path: '/users', element: <UserList /> },
+        { path: '/newUser', element: <NewUser /> },
+        { path: '/user/:userId', element: <UserEdit /> },
+        { path: '/products', element: <ProductList /> },
+        { path: '/newProduct', element: <NewProduct /> },
+        { path: '/calendar', element: <Calendar /> },
+        {path: '/kanban',element: <Kanban />,
+}
       ]
     },
   ]);
-  return (
-    <>
-    <RouterProvider router={router} />
-      {/* <TopBar />
-      <div className='container'>
-        <Sidebar/>
-        <div className="mainContentWrapper">
-          <Home />
-        </div>
-      </div> */}
 
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
